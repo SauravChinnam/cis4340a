@@ -27,16 +27,8 @@ public class R06_MET01_J {
     public static void main(String[] args) {
 
         try {
-            int result = getAbsAdd(Integer.MIN_VALUE, 1);
-            System.out.println("Noncompliant result: " + result);
-        } catch (AssertionError e) {
-            System.err.println("Assertion failed: " + e.getMessage());
-        }
-
-
-        try {
-            int result2 = getAbsAddCompliant(Integer.MIN_VALUE, 1);
-            System.out.println("Compliant result: " + result2);
+            int result = getAbsAddCompliant(Integer.MIN_VALUE, 1);
+            System.out.println("Compliant result: " + result);
         } catch (IllegalArgumentException e) {
             System.err.println("Illegal argument: " + e.getMessage());
         }

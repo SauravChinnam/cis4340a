@@ -28,14 +28,6 @@ public class R15_SER03_J {
 
     public static void main(String[] args) {
 
-        CredentialsNonCompliant creds = new CredentialsNonCompliant("user", "secret");
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("creds_noncompliant.ser"))) {
-            oos.writeObject(creds);
-        } catch (IOException e) {
-            System.err.println("Error serializing noncompliant credentials: " + e.getMessage());
-        }
-
-
         CredentialsCompliant safeCreds = new CredentialsCompliant("user", "secret");
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("creds_compliant.ser"))) {
             oos.writeObject(safeCreds);

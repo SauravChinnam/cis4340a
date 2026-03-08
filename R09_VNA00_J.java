@@ -1,21 +1,9 @@
 
 public class R09_VNA00_J {
 
-    private static boolean stop = false;
 
 
     public static void main(String[] args) throws InterruptedException {
-        Thread worker = new Thread(() -> {
-            while (!stop) {
-
-            }
-            System.out.println("Noncompliant worker stopped");
-        });
-        worker.start();
-        Thread.sleep(1000);
-        stop = true;
-        worker.join();
-
 
         runCompliantExample();
     }

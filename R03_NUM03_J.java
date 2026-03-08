@@ -20,12 +20,8 @@ public class R03_NUM03_J {
         byte[] data = { (byte)0xFF, (byte)0xFF, (byte)0xFF, (byte)0xFF };
         DataInputStream dis = new DataInputStream(new ByteArrayInputStream(data));
 
-        int nonCompliant = getInteger(dis);
-        System.out.println("Noncompliant value: " + nonCompliant);
 
-
-        dis = new DataInputStream(new ByteArrayInputStream(data));
-        long compliant = getIntegerCompliant(dis);
-        System.out.println("Compliant value: " + compliant);
+        long value = getIntegerCompliant(dis);
+        System.out.println("Compliant value: " + value);
     }
 }

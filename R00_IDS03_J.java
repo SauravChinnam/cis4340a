@@ -7,15 +7,9 @@ public class R00_IDS03_J {
 
 
     public static void main(String[] args) {
-        String username = args.length > 0 ? args[0] : "guest";
-        boolean loginSuccessful = false;
 
 
-        if (loginSuccessful) {
-            logger.severe("User login succeeded for: " + username);
-        } else {
-            logger.severe("User login failed for: " + username);
-        }
+        compliantMain(args);
     }
 
 
