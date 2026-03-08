@@ -36,7 +36,7 @@ public class R08_ERR00_J {
     }
 
     public static void main(String[] args) {
-        readFile();
 
+        readFileCompliant();
     }
 }

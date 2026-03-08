@@ -37,7 +37,7 @@ public class R14_FIO01_J {
     }
 
     public static void main(String[] args) throws IOException {
-        writeFile();
+
         writeFileCompliant();
     }
 }

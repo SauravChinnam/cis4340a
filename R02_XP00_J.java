@@ -22,7 +22,7 @@ public class R02_XP00_J {
 
     public static void main(String[] args) {
         R02_XP00_J demo = new R02_XP00_J();
-        demo.deleteFile();
 
+        demo.deleteFileCompliant();
     }
 }
